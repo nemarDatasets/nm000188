@@ -1,0 +1,42 @@
+{
+	"Name": "BNCI 2014-009 P300 dataset",
+	"BIDSVersion": "1.9.0",
+	"HEDVersion": "8.4.0",
+	"DatasetType": "derivative",
+	"License": "CC-BY-NC-ND-4.0",
+	"Authors": [
+		"P Aric\u00f2",
+		"F Aloise",
+		"F Schettini",
+		"S Salinari",
+		"D Mattia",
+		"F Cincotti"
+	],
+	"EthicsApprovals": [
+		"Approved by local Ethics Committee"
+	],
+	"ReferencesAndLinks": [
+		"10.3389/fnhum.2013.00732"
+	],
+	"GeneratedBy": [
+		{
+			"CodeURL": "https://github.com/NeuroTechX/moabb",
+			"Name": "moabb",
+			"Description": "Mother of All BCI Benchmarks",
+			"Version": "1.5.0"
+		}
+	],
+	"SourceDatasets": [
+		{
+			"DOI": "10.1088/1741-2560/11/3/035008"
+		}
+	],
+	"Keywords": [
+		"P300 latency jitter",
+		"brain-computer interface",
+		"covert attention",
+		"wavelet analysis",
+		"single epoch"
+	],
+	"PublicationYear": 2014
+}

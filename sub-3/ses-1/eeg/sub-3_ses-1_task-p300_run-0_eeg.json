@@ -1,0 +1,43 @@
+{
+	"TaskName": "p300",
+	"Manufacturer": "g.tec",
+	"PowerLineFrequency": 50.0,
+	"SamplingFrequency": 256.0,
+	"SoftwareFilters": {
+		"preprocessing_steps": {
+			"Description": "bandpass filtering"
+		}
+	},
+	"RecordingDuration": 196.02734375,
+	"RecordingType": "continuous",
+	"EEGReference": "linked earlobes",
+	"EEGGround": "right mastoid",
+	"EEGPlacementScheme": "10-10 system",
+	"EEGChannelCount": 16,
+	"EOGChannelCount": 0,
+	"ECGChannelCount": 0,
+	"EMGChannelCount": 0,
+	"TriggerChannelCount": 0,
+	"ManufacturersModelName": "g.USBamp",
+	"SoftwareVersions": "BCI2000",
+	"CapManufacturer": "Electro-Cap International, Inc.",
+	"HardwareFilters": {
+		"Bandpass": {
+			"low_cutoff_hz": 0.1,
+			"high_cutoff_hz": 20.0,
+			"Type": "Butterworth",
+			"Order": 8
+		}
+	},
+	"TaskDescription": "[spelling] P300-based BCI with two interfaces: P300 Speller (overt attention) and GeoSpell (covert attention). 36 alphanumeric characters presented. Eight stimulation sequences per trial with 16 target intensifications. Trial duration: 16.0s, ISI: 125.0ms, SOA: 250.0ms.",
+	"Instructions": "Subject focused on one out of 36 different characters. At the beginning of each trial, the system prompted the subject with the character to attend. Target prompt appeared during a 2 s pre-trial interval.",
+	"CogAtlasID": "https://www.cognitiveatlas.org/task/id/tsk_GxjZBNiJorj1K/",
+	"InstitutionName": "Fondazione Santa Lucia IRCCS",
+	"InstitutionAddress": "Rome, Italy",
+	"InstitutionalDepartmentName": "Neuroelectrical Imaging and BCI Lab",
+	"CapManufacturersModelName": "n/a",
+	"SubjectArtefactDescription": "Impedance kept below 10.0 kOhm",
+	"DeviceSerialNumber": "n/a",
+	"Description": "Complete record of P300 evoked potentials recorded with BCI2000 using two different paradigms: P300 Speller (overt attention) and GeoSpell (covert attention). 10 healthy subjects focused on one out of 36 different characters.",
+	"MISCChannelCount": 0
+}

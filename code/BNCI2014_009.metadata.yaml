@@ -1,0 +1,201 @@
+_dataset:
+  class: BNCI2014_009
+  code: BNCI2014-009
+  doi: 10.1088/1741-2560/11/3/035008
+  interval:
+  - 0
+  - 0.8
+  n_subjects: 10
+  paradigm: p300
+abstract: 'This dataset represents a complete record of P300 evoked potentials recorded with BCI2000 using two different paradigms:
+  a paradigm based on the P300 Speller originally described by Farwell and Donchin in overt attention condition and a paradigm
+  based on the GeoSpell interface used in covert attention condition. In these sessions, 10 healthy subjects focused on one
+  out of 36 different characters. The objective was to predict the correct character in each of the provided character selection
+  epochs.'
+acquisition:
+  cap_manufacturer: Electro-Cap International, Inc.
+  channel_types:
+    eeg: 16
+  filters: bandpass 0.1-20 Hz
+  ground: right mastoid
+  hardware: g.USBamp
+  impedance_threshold_kohm: 10.0
+  line_freq: 50.0
+  montage: 10-10
+  n_channels: 16
+  reference: linked earlobes
+  sampling_rate: 256.0
+  sensor_type: Ag/AgCl
+  sensors:
+  - Fz
+  - Cz
+  - Pz
+  - Oz
+  - P3
+  - P4
+  - PO7
+  - PO8
+  - F3
+  - F4
+  - FCz
+  - C3
+  - C4
+  - CP3
+  - CPz
+  - CP4
+  software: BCI2000
+bci_application:
+  applications:
+  - communication
+  - spelling
+  environment: laboratory
+cross_validation:
+  cv_folds: 3
+  cv_method: cross-validation
+  evaluation_type:
+  - within_session
+data_processed: true
+data_structure:
+  n_blocks: 3
+  n_trials: 18
+  trials_context: 6 trials × 3 runs per session
+documentation:
+  associated_paper_doi: 10.3389/fnhum.2013.00732
+  contact_info:
+  - p.arico@hsantalucia.it
+  country: Italy
+  description: 'Complete record of P300 evoked potentials recorded with BCI2000 using two different paradigms: P300 Speller
+    (overt attention) and GeoSpell (covert attention). 10 healthy subjects focused on one out of 36 different characters.'
+  doi: 10.1088/1741-2560/11/3/035008
+  ethics_approval:
+  - Approved by local Ethics Committee
+  institution: Fondazione Santa Lucia IRCCS
+  institution_address: Rome, Italy
+  institution_department: Neuroelectrical Imaging and BCI Lab
+  investigators:
+  - P Aricò
+  - F Aloise
+  - F Schettini
+  - S Salinari
+  - D Mattia
+  - F Cincotti
+  keywords:
+  - P300 latency jitter
+  - brain-computer interface
+  - covert attention
+  - wavelet analysis
+  - single epoch
+  license: CC-BY-NC-ND-4.0
+  publication_year: 2014
+  repository: BNCI Horizon
+  senior_author: F Cincotti
+experiment:
+  class_labels:
+  - Target
+  - NonTarget
+  events:
+    non_target: 5
+    target: 1
+  feedback_type: none
+  instructions: Subject focused on one out of 36 different characters. At the beginning of each trial, the system prompted
+    the subject with the character to attend. Target prompt appeared during a 2 s pre-trial interval.
+  mode: offline
+  n_classes: 2
+  paradigm: p300
+  primary_modality: visual
+  stimulus_modalities:
+  - visual
+  stimulus_presentation:
+    isi_ms: '125'
+    n_intensifications_per_target: '16'
+    n_sequences: '8'
+    pre_trial_interval_s: '2.0'
+    soa_ms: '250'
+    stimulus_duration_ms: '125'
+    tti_min_ms: '500'
+  stimulus_type: visual_intensification
+  study_design: 'P300-based BCI with two interfaces: P300 Speller (overt attention) and GeoSpell (covert attention). 36 alphanumeric
+    characters presented. Eight stimulation sequences per trial with 16 target intensifications.'
+  synchronicity: synchronous
+  task_type: spelling
+  trial_duration: 16.0
+file_format: MAT
+methodology: Ten healthy subjects (10 female, mean age = 26.8 ± 5.6) with previous experience with P300-based BCIs attended
+  4 recording sessions. Scalp EEG potentials were measured using 16 Ag/AgCl electrodes arranged on an elastic cap per the
+  10-10 standard. Each electrode was referenced to the linked earlobes and grounded to the right mastoid. The EEG was acquired
+  using a g.USBamp amplifier (g.Tec, Austria), digitized at 256 Hz, high pass- and low pass-filtered with cutoff frequencies
+  of 0.1 Hz and 20 Hz, respectively. The electrode impedance did not exceed 10 kΩ. Visual stimulation, acquisition and online
+  classification were performed with BCI2000. Each subject attended 4 recording sessions. During each session, the subject
+  performed three runs with each of the stimulation interfaces. Each trial consisted of eight stimulation sequences, and thus,
+  16 intensifications of the target character. Each stimulus was intensified for 125 ms, with an inter stimulus interval (ISI)
+  of 125 ms, yielding a 250 ms lag between the appearance of two stimuli (SOA). Pseudorandom stimulation sequences were assembled
+  so that each target intensification would not occur within 500 ms after the previous one to avoid the attentional blink
+  phenomenon.
+paradigm_specific:
+  detected_paradigm: p300
+  isi_ms: 125.0
+  n_repetitions: 8
+  n_targets: 36
+  soa_ms: 250.0
+participants:
+  age_mean: 26.8
+  age_std: 5.6
+  ages:
+  - 22
+  - 23
+  - 27
+  - 23
+  - 23
+  - 26
+  - 40
+  - 23
+  - 26
+  - 35
+  bci_experience: experienced
+  gender:
+    female: 10
+    male: 0
+  health_status: healthy
+  n_subjects: 10
+  species: human
+performance:
+  p300_latency_jitter_correlation: negative correlation with accuracy
+preprocessing:
+  bandpass:
+    high_cutoff_hz: 20.0
+    low_cutoff_hz: 0.1
+  data_state: preprocessed
+  epoch_window:
+  - 0.0
+  - 0.8
+  filter_order: 8
+  filter_type: Butterworth
+  highpass_hz: 0.1
+  lowpass_hz: 20.0
+  notes: EEG acquired using g.USBamp amplifier (g.Tec, Austria), digitized at 256 Hz
+  preprocessing_applied: true
+  preprocessing_steps:
+  - bandpass filtering
+  re_reference: linked earlobes
+runs_per_session: 1
+sessions_per_subject: 3
+signal_processing:
+  classifiers:
+  - LDA
+  - SWLDA
+  feature_extraction:
+  - Wavelet
+  - Time-Frequency
+  - CWT
+  frequency_bands:
+    analyzed_range:
+    - 1.0
+    - 20.0
+tags:
+  modality:
+  - Visual
+  pathology:
+  - Healthy
+  type:
+  - P300
+  - ERP
