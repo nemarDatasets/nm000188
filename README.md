@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.nm000188-blue)](https://doi.org/10.82901/nemar.nm000188)
+
 # BNCI 2014-009 P300 dataset
 
 BNCI 2014-009 P300 dataset.
