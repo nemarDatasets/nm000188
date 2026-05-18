@@ -1,0 +1,92 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "validated",
+  "authors": {
+    "P Aricò": {},
+    "F Aloise": {},
+    "F Schettini": {},
+    "S Salinari": {},
+    "D Mattia": {},
+    "F Cincotti": {}
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.1088/1741-2560/11/3/035008",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "10.3389/fnhum.2013.00732",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000188",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000188",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1038/s41597-019-0104-8",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    }
+  ],
+  "title": "BNCI 2014-009 P300 dataset",
+  "license": "CC-BY-NC-ND-4.0",
+  "dataset_type": "derivative",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "73.4 MB (31 files)"
+  ],
+  "formats": [
+    ".bdf",
+    ".json",
+    ".md",
+    ".tsv",
+    ".yaml",
+    ".yml"
+  ],
+  "description": "This dataset comprises P300 evoked potentials recorded from 10 healthy female subjects using two complementary paradigms: the P300 Speller (overt attention) and GeoSpell (covert attention). Scalp EEG was acquired at 256 Hz from 16 electrodes during character selection tasks involving 36 alphanumeric targets. The dataset includes preprocessed data with bandpass filtering (0.1-20 Hz) and serves as a benchmark resource for evaluating P300-based brain-computer interface performance, with particular focus on the relationship between P300 latency jitter and classification accuracy.",
+  "methods_description": "Ten experienced subjects attended 4 recording sessions. Scalp EEG was recorded using 16 Ag/AgCl electrodes (10-10 montage) referenced to linked earlobes and grounded to right mastoid, acquired via g.USBamp amplifier at 256 Hz. Online filtering applied bandpass 0.1-20 Hz (Butterworth, order 8). Each session comprised 3 runs per interface with 8 stimulation sequences per trial (16 target intensifications). Stimuli were presented for 125 ms with 125 ms inter-stimulus interval (250 ms SOA). Preprocessing included bandpass filtering and epoching [0.0, 0.8] s.",
+  "keywords": [
+    {
+      "term": "P300"
+    },
+    {
+      "term": "brain-computer interface"
+    },
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "Event-Related Potentials, P300",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
+    },
+    {
+      "term": "covert attention"
+    },
+    {
+      "term": "wavelet analysis"
+    },
+    {
+      "term": "visual attention"
+    }
+  ],
+  "source_hash": "51241f0922a17e03feb7a4c7d0914f1c3b73f55f121ae441dec4df0500b294a4"
+}
