@@ -1,6 +1,11 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
+  "title": "BNCI 2014-009 P300 dataset",
+  "description": "This dataset comprises P300 evoked potentials recorded from 10 healthy female subjects using two complementary paradigms: the P300 Speller (overt attention) and GeoSpell (covert attention) interfaces. Scalp EEG was acquired from 16 electrodes at 256 Hz while subjects focused on one of 36 alphanumeric characters across multiple sessions. The dataset includes preprocessed data with bandpass filtering (0.1-20 Hz) and is designed to investigate P300 latency jitter effects on brain-computer interface performance.",
+  "methods_description": "EEG was recorded from 10 healthy subjects (mean age 26.8 ± 5.6 years) using 16 Ag/AgCl electrodes arranged in a 10-10 montage, referenced to linked earlobes and grounded to the right mastoid. Data were acquired with a g.USBamp amplifier at 256 Hz and filtered online with a bandpass of 0.1-20 Hz. Each trial consisted of 8 stimulation sequences with 16 target intensifications (125 ms stimulus duration, 125 ms inter-stimulus interval, 250 ms stimulus onset asynchrony). Subjects attended 4 sessions with 3 runs per session using BCI2000 software.",
+  "license": "CC-BY-NC-ND-4.0",
+  "dataset_type": "derivative",
   "authors": {
     "P Aricò": {},
     "F Aloise": {},
@@ -9,59 +14,6 @@
     "D Mattia": {},
     "F Cincotti": {}
   },
-  "related_identifiers": [
-    {
-      "identifier": "10.1088/1741-2560/11/3/035008",
-      "identifier_type": "DOI",
-      "relation_type": "IsDerivedFrom"
-    },
-    {
-      "identifier": "10.3389/fnhum.2013.00732",
-      "identifier_type": "DOI",
-      "relation_type": "References"
-    },
-    {
-      "identifier": "https://github.com/nemarDatasets/nm000188",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000188",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "10.21105/joss.01896",
-      "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "10.1038/s41597-019-0104-8",
-      "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
-    }
-  ],
-  "title": "BNCI 2014-009 P300 dataset",
-  "license": "CC-BY-NC-ND-4.0",
-  "dataset_type": "derivative",
-  "resource_type_general": "Dataset",
-  "modalities": [
-    "eeg"
-  ],
-  "resource_type_specific": "EEG Dataset",
-  "sizes": [
-    "73.4 MB (31 files)"
-  ],
-  "formats": [
-    ".bdf",
-    ".json",
-    ".md",
-    ".tsv",
-    ".yaml",
-    ".yml"
-  ],
-  "description": "This dataset comprises P300 evoked potentials recorded from 10 healthy female subjects using two complementary paradigms: the P300 Speller (overt attention) and GeoSpell (covert attention). Scalp EEG was acquired at 256 Hz from 16 electrodes during character selection tasks involving 36 alphanumeric targets. The dataset includes preprocessed data with bandpass filtering (0.1-20 Hz) and serves as a benchmark resource for evaluating P300-based brain-computer interface performance, with particular focus on the relationship between P300 latency jitter and classification accuracy.",
-  "methods_description": "Ten experienced subjects attended 4 recording sessions. Scalp EEG was recorded using 16 Ag/AgCl electrodes (10-10 montage) referenced to linked earlobes and grounded to right mastoid, acquired via g.USBamp amplifier at 256 Hz. Online filtering applied bandpass 0.1-20 Hz (Butterworth, order 8). Each session comprised 3 runs per interface with 8 stimulation sequences per trial (16 target intensifications). Stimuli were presented for 125 ms with 125 ms inter-stimulus interval (250 ms SOA). Preprocessing included bandpass filtering and epoching [0.0, 0.8] s.",
   "keywords": [
     {
       "term": "P300"
@@ -85,8 +37,57 @@
       "term": "wavelet analysis"
     },
     {
-      "term": "visual attention"
+      "term": "visual stimulation"
     }
   ],
-  "source_hash": "51241f0922a17e03feb7a4c7d0914f1c3b73f55f121ae441dec4df0500b294a4"
+  "related_identifiers": [
+    {
+      "identifier": "10.1088/1741-2560/11/3/035008",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "10.3389/fnhum.2013.00732",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000188",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1038/s41597-019-0104-8",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000188",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    }
+  ],
+  "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "sizes": [
+    "258.7 MB (41 files)"
+  ],
+  "formats": [
+    ".bdf",
+    ".json",
+    ".mat",
+    ".md",
+    ".tsv",
+    ".yaml",
+    ".yml"
+  ],
+  "source_hash": "b8c37714bfccfe0b1ef8ecad0a9e54c3c07ec474b9c5ca497ac131a14b1c3075"
 }
