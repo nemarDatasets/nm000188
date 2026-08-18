@@ -3,7 +3,7 @@
   "pipeline_stage": "validated",
   "title": "BNCI 2014-009 P300 dataset",
   "description": "This dataset comprises P300 evoked potentials recorded from 10 healthy female subjects using two complementary paradigms: the P300 Speller (overt attention) and GeoSpell (covert attention) interfaces. Scalp EEG was acquired from 16 electrodes at 256 Hz while subjects focused on one of 36 alphanumeric characters across multiple sessions. The dataset includes preprocessed data with bandpass filtering (0.1-20 Hz) and is designed to investigate P300 latency jitter effects on brain-computer interface performance.",
-  "methods_description": "EEG was recorded from 10 healthy subjects (mean age 26.8 ± 5.6 years) using 16 Ag/AgCl electrodes arranged in a 10-10 montage, referenced to linked earlobes and grounded to the right mastoid. Data were acquired with a g.USBamp amplifier at 256 Hz and filtered online with a bandpass of 0.1-20 Hz. Each trial consisted of 8 stimulation sequences with 16 target intensifications (125 ms stimulus duration, 125 ms inter-stimulus interval, 250 ms stimulus onset asynchrony). Subjects attended 4 sessions with 3 runs per session using BCI2000 software.",
+  "methods_description": "EEG was acquired from 10 healthy subjects (mean age 26.8 ± 5.6 years) using 16 Ag/AgCl electrodes arranged in a 10-10 montage, referenced to linked earlobes and grounded to the right mastoid. Data were recorded with a g.USBamp amplifier at 256 Hz and processed with BCI2000 software. Visual stimuli were presented for 125 ms with 125 ms inter-stimulus intervals (250 ms stimulus onset asynchrony). Each trial consisted of 8 stimulation sequences with 16 target intensifications. Data were preprocessed with Butterworth bandpass filtering (0.1-20 Hz, order 8).",
   "license": "CC-BY-NC-ND-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -89,5 +89,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "b8c37714bfccfe0b1ef8ecad0a9e54c3c07ec474b9c5ca497ac131a14b1c3075"
+  "source_hash": "9b74e041aa410dff7575484d8ecb61c4fea498ab0d8bbb1661d9a12a5f77103d"
 }
