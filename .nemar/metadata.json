@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BNCI 2014-009 P300 dataset",
-  "description": "This dataset comprises P300 evoked potentials recorded from 10 healthy female subjects using two complementary paradigms: the P300 Speller (overt attention) and GeoSpell (covert attention) interfaces. Scalp EEG was acquired from 16 electrodes at 256 Hz while subjects focused on one of 36 alphanumeric characters across multiple sessions. The dataset includes preprocessed data with bandpass filtering (0.1-20 Hz) and is designed to investigate P300 latency jitter effects on brain-computer interface performance.",
-  "methods_description": "EEG was acquired from 10 healthy subjects (mean age 26.8 ± 5.6 years) using 16 Ag/AgCl electrodes arranged in a 10-10 montage, referenced to linked earlobes and grounded to the right mastoid. Data were recorded with a g.USBamp amplifier at 256 Hz and processed with BCI2000 software. Visual stimuli were presented for 125 ms with 125 ms inter-stimulus intervals (250 ms stimulus onset asynchrony). Each trial consisted of 8 stimulation sequences with 16 target intensifications. Data were preprocessed with Butterworth bandpass filtering (0.1-20 Hz, order 8).",
+  "description": "A P300 brain-computer interface EEG dataset from 10 healthy, BCI-experienced participants who selected among 36 characters using two interfaces: the overt-attention P300 Speller and the covert-attention GeoSpell. Sixteen-channel EEG was recorded with BCI2000 across multiple sessions, and the data support analysis of P300 latency jitter and its relationship to classification accuracy.",
+  "methods_description": "Scalp EEG was recorded from 16 Ag/AgCl electrodes (10-10 layout) with a g.USBamp amplifier at 256 Hz. Electrodes were referenced to linked earlobes with a right-mastoid ground, and the data were band-pass filtered at 0.1-20 Hz. Visual stimulation and acquisition used BCI2000. Each trial had eight stimulation sequences, with a 125 ms intensification and a 125 ms inter-stimulus interval (250 ms SOA). Each subject performed three runs per interface in each session.",
   "license": "CC-BY-NC-ND-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -16,28 +16,25 @@
   },
   "keywords": [
     {
-      "term": "P300"
-    },
-    {
-      "term": "brain-computer interface"
-    },
-    {
       "term": "EEG"
     },
     {
-      "term": "Event-Related Potentials, P300",
+      "term": "P300"
+    },
+    {
+      "term": "Brain-Computer Interfaces",
       "subject_scheme": "MeSH",
       "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
       "term": "covert attention"
     },
     {
-      "term": "wavelet analysis"
+      "term": "event-related potentials"
     },
     {
-      "term": "visual stimulation"
+      "term": "P300 speller"
     }
   ],
   "related_identifiers": [
@@ -59,12 +56,12 @@
     {
       "identifier": "10.21105/joss.01896",
       "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
+      "relation_type": "References"
     },
     {
       "identifier": "10.1038/s41597-019-0104-8",
       "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
+      "relation_type": "References"
     },
     {
       "identifier": "https://nemar.org/dataset/nm000188",
@@ -78,7 +75,7 @@
     "eeg"
   ],
   "sizes": [
-    "258.7 MB (41 files)"
+    "247 MB (41 files)"
   ],
   "formats": [
     ".bdf",
