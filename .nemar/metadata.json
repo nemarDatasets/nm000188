@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
+  "pipeline_stage": "enriched",
   "title": "BNCI 2014-009 P300 dataset",
-  "description": "A P300 brain-computer interface EEG dataset from 10 healthy, BCI-experienced participants who selected among 36 characters using two interfaces: the overt-attention P300 Speller and the covert-attention GeoSpell. Sixteen-channel EEG was recorded with BCI2000 across multiple sessions, and the data support analysis of P300 latency jitter and its relationship to classification accuracy.",
-  "methods_description": "Scalp EEG was recorded from 16 Ag/AgCl electrodes (10-10 layout) with a g.USBamp amplifier at 256 Hz. Electrodes were referenced to linked earlobes with a right-mastoid ground, and the data were band-pass filtered at 0.1-20 Hz. Visual stimulation and acquisition used BCI2000. Each trial had eight stimulation sequences, with a 125 ms intensification and a 125 ms inter-stimulus interval (250 ms SOA). Each subject performed three runs per interface in each session.",
+  "description": "A P300 brain-computer interface EEG dataset from 10 healthy, BCI-experienced female participants who selected one of 36 characters using two visual spelling interfaces: the P300 Speller (overt attention) and GeoSpell (covert attention). EEG was recorded from 16 scalp electrodes across multiple sessions. The dataset supports analysis of P300 latency jitter and its relationship to BCI classification performance.",
+  "methods_description": "Scalp EEG was recorded from 16 Ag/AgCl electrodes (10-10 placement) with a g.USBamp amplifier at 256 Hz, referenced to linked earlobes and grounded at the right mastoid. The signal was band-pass filtered at 0.1-20 Hz, and impedance was kept below 10 kOhm. Stimulation, acquisition and online classification used BCI2000. Each trial comprised eight stimulation sequences (16 target intensifications) with 125 ms intensification, 125 ms ISI and 250 ms SOA. Subjects performed three runs with each interface per session.",
   "license": "CC-BY-NC-ND-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -23,9 +23,13 @@
     },
     {
       "term": "Brain-Computer Interfaces",
-      "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+      "subject_scheme": "MeSH"
+    },
+    {
+      "term": "brain-computer interface"
+    },
+    {
+      "term": "single epoch"
     },
     {
       "term": "covert attention"
@@ -34,7 +38,13 @@
       "term": "event-related potentials"
     },
     {
-      "term": "P300 speller"
+      "term": "P300 latency jitter"
+    },
+    {
+      "term": "wavelet analysis"
+    },
+    {
+      "term": "GeoSpell"
     }
   ],
   "related_identifiers": [
@@ -86,5 +96,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "9b74e041aa410dff7575484d8ecb61c4fea498ab0d8bbb1661d9a12a5f77103d"
+  "source_hash": "0943f7a724a21152a15040e196788e137017d0d9067c0a78d7b67c06d9212cf4"
 }
